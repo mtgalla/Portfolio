@@ -1,5 +1,6 @@
 body{
     background-image: url("../assets/images/graphy.png");
+    /*width:100%;*/
 }
 
 a:hover{
@@ -11,13 +12,14 @@ a:active{
   color:white;
 }
 
-.container{
+.container1{
     margin-left:260px;
 }
 
 .navbar{
-background-image:linear-gradient(to right,rgb(52, 52, 52),rgb(82, 82, 82));
-overflow-wrap: break-word;
+  background-image:linear-gradient(to right,rgb(52, 52, 52),rgb(82, 82, 82));
+  overflow-wrap: break-word;
+  font-size: larger;
 }
 
 .break-word{
@@ -42,6 +44,14 @@ overflow-wrap: break-word;
   color:rgb(53, 53, 53);
 }
 
+.placeholder-test{
+  background-image: url("../assets/images/skyline.png");
+  background-size: cover;
+  max-width:100%;
+  height:-webkit-fill-available;
+  background-repeat: center no-repeat;
+}
+
 .placeholder{
   position: relative;
   left:-55px;  
@@ -54,6 +64,7 @@ overflow-wrap: break-word;
 
 .spacer{
   margin-top:60px;
+  margin-left:260px;
 }
 
 .text-style{
@@ -69,7 +80,7 @@ position: fixed;
 top:0;
 left:0;
 bottom:0;
-max-width:220px;
+max-width:224px;
 flex-direction: column;
 flex-flow: column nowrap;
 align-items: flex-start;
@@ -90,9 +101,12 @@ html {
   }
 
 .wrapper {
-    display: flex;
-    /*width: 100%;*/
-    align-items: stretch;
+    /*display: flex;*/
+    margin-left: 224px;
+    width: 100%;
+    margin-top:0px;
+    /*align-items: stretch;*/
+    /*position: fixed;*/
 }
 
 .image-name{
@@ -116,3 +130,27 @@ html {
     text-decoration: none;
     color:#ffffff;
 }
+
+.p-text{
+font-size: 1.5em;
+font-family: Arial, Helvetica, sans-serif;
+margin-top:60px;
+flex-grow: 1;
+margin-left:20px;
+}
+
+/*@media (min-width: 768px){
+.col-md-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 22.666667%;
+}
+}
+
+@media (min-width: 576px){
+.col-sm-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 37.666667%;
+}
+}*/
