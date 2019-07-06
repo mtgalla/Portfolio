@@ -1,6 +1,19 @@
+/*html {
+  /* border-box box model allows us to add padding and border to our elements without increasing their size */
+  /* box-sizing: border-box;
+  /* A system font stack so things load nice and quick! */
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 900;
+  font-size: 10px;
+  color: var(--black);
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+}*/
+
+
 body{
     background-image: url("../assets/images/graphy.png");
-    /*width:100%;*/
+    /* max-width:100%; */
 }
 
 a:hover{
@@ -13,7 +26,8 @@ a:active{
 }
 
 .container1{
-    margin-left:260px;
+  display:grid;
+    /* margin-left:260px; */
 }
 
 .navbar{
@@ -64,7 +78,7 @@ a:active{
 
 .spacer{
   margin-top:60px;
-  margin-left:260px;
+  /* margin-left:260px; */
 }
 
 .text-style{
@@ -86,15 +100,15 @@ flex-flow: column nowrap;
 align-items: flex-start;
 }
 
-.navbar-expand-lg .navbar-nav{
+/* .navbar-expand-lg .navbar-nav{
     flex-direction:column;
     
-}
-
+} */
+/* 
 .navbar-collapse{
   flex-grow:0;
   margin-top:20px;
-}
+} */
 
 html {
     scroll-behavior: smooth;
@@ -121,9 +135,9 @@ html {
 .image-resize{
     display: flex;
     margin-top: 20px;
-    width:300px;
+    /* width:300px; */
     height:200px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .link-format{
@@ -135,10 +149,31 @@ html {
 font-size: 1.5em;
 font-family: Arial, Helvetica, sans-serif;
 margin-top:60px;
-flex-grow: 1;
-margin-left:20px;
+display: grid;
+grid-template-rows: 1fr;
+/* flex-grow: 1; */
+/* margin-left: auto;
+max-width: 70%; */
 }
 
+/* .card{
+  width: 18rem;
+  margin: 5px;
+} */
+
+.portfolio-card {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+  grid-auto-rows: max-content;
+}
+.card {
+  background: white;
+  padding: 10px;
+  border: 1px solid white;
+  text-align: center;
+  box-shadow: 0 0 4px  rgba(0,0,0,0.1);
+}
 /*@media (min-width: 768px){
 .col-md-8 {
     -ms-flex: 0 0 66.666667%;
