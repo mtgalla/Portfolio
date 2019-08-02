@@ -12,13 +12,20 @@
 
 
 body{
-    background-image: url("../assets/images/graphy.png");
+    /* background-image: url("../assets/images/graphy.png"); */
+      /* background-image: url("../assets/images/skyline.png"); */
+      /* background-size: cover;
+      max-width:100%;
+      background-repeat: center no-repeat; */
+    background-image:linear-gradient(to right,teal,rgb(82, 197, 197));
+    /* background-color: aqua; */
     /* max-width:100%; */
 }
 
-a:hover{
-    color: blue;
+a:hover, i:hover {
+    color: aqua;
 }
+
 
 a:active{
   background-color:teal;
@@ -55,14 +62,15 @@ a:active{
   font-size: 20px;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
-  color:rgb(53, 53, 53);
+  /* color:rgb(53, 53, 53); */
+  color:white;
 }
 
 .placeholder-test{
-  background-image: url("../assets/images/skyline.png");
+  /* background-image: url("../assets/images/skyline.png"); */
   background-size: cover;
   max-width:100%;
-  height:-webkit-fill-available;
+  /* height:-webkit-fill-available; */
   background-repeat: center no-repeat;
 }
 
@@ -78,7 +86,24 @@ a:active{
 
 .spacer{
   margin-top:60px;
+  color: white;
+  font-weight: bolder;
   /* margin-left:260px; */
+}
+
+.center {
+  margin: auto;
+  width: 18rem;
+}
+
+.font-white {
+  text-align: justify;
+  margin: 0 5rem 5%;
+  color: white;
+}
+
+.font-white > h1, .center > h1 {
+  font-weight: bold;
 }
 
 .text-style{
@@ -86,7 +111,8 @@ a:active{
   font-size: 3em;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
-  color:rgb(53, 53, 53);
+  /* color:rgb(53, 53, 53); */
+  color: white;
 }
 
 .fixed-left{
@@ -142,12 +168,14 @@ html {
 
 .link-format{
     text-decoration: none;
-    color:#ffffff;
+    color:darkblue;
+    font-weight: bold;
 }
 
 .p-text{
 font-size: 1.5em;
 font-family: Arial, Helvetica, sans-serif;
+color: white;
 margin-top:60px;
 display: grid;
 grid-template-rows: 1fr;
@@ -156,16 +184,16 @@ grid-template-rows: 1fr;
 max-width: 70%; */
 }
 
-/* .card{
-  width: 18rem;
-  margin: 5px;
-} */
+.portfolio-section {
+  color: white;
+}
 
 .portfolio-card {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
   grid-auto-rows: max-content;
+  justify-items: center;
 }
 .card {
   background: white;
@@ -174,18 +202,7 @@ max-width: 70%; */
   text-align: center;
   box-shadow: 0 0 4px  rgba(0,0,0,0.1);
 }
-/*@media (min-width: 768px){
-.col-md-8 {
-    -ms-flex: 0 0 66.666667%;
-    flex: 0 0 66.666667%;
-    max-width: 22.666667%;
-}
-}
 
-@media (min-width: 576px){
-.col-sm-8 {
-    -ms-flex: 0 0 66.666667%;
-    flex: 0 0 66.666667%;
-    max-width: 37.666667%;
+.fab, .far, strong {
+  color: darkblue;
 }
-}*/
